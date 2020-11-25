@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 26.66666667vw;
+}
+body {
+  font-size: 20px;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.container .header {
+  height: 0.27rem;
+  width: 2.93rem;
+  position: relative;
+  top: 0.64rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f98423;
+}
+.container .header .block {
+  width: 0.93rem;
+  height: 1.05rem;
+  position: absolute;
+  background-image: url(../img/lock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.15rem;
+}
+.container .header .block img {
+  vertical-align: middle;
+  width: 0.57rem;
+}
+.container .center {
+  position: relative;
+  width: 3rem;
+  top: 1.15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.16rem;
+}
+.container .center .count {
+  font-weight: bolder;
+}
+.container .center .topic {
+  margin: 20px 0 30px;
+}
+.container .center .option {
+  text-align: left;
+  margin-top: 10px;
+}
+.container .center .option .options {
+  position: relative;
+  border: solid 0.02rem #f98423;
+  padding: 0.11rem 0.16rem;
+  border-radius: 0.13rem;
+  margin-bottom: 15px;
+}
+.container .center .option .options .roW {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+  transform: translateY(-50%);
+  width: 0.47rem;
+  height: 0.36rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container .footer {
+  position: absolute;
+  bottom: 0.12rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 3.4rem;
+  height: 0.63rem;
+  background-image: url(../img/bottom_tip.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container .score {
+  position: absolute;
+  font-size: 0.2rem;
+  font-weight: bolder;
+  color: red;
+  top: 0.25rem;
+  right: 0.2rem;
+}
+.mc {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mc .frist {
+  display: none;
+  width: 3.37rem;
+  height: 3.37rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.23rem;
+  font-size: 0.2rem;
+  color: #ed760d;
+  text-align: center;
+}
+.mc .frist .sd {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(../img/5baf76dad14b46a49b98842035c45d2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  line-height: 2rem;
+}
+.mc .frist .sd img {
+  width: 0.54rem;
+}
+.mc .frist .sd::after {
+  content: '+10';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.2rem;
+  font-weight: bolder;
+}
+.mc .frist div:nth-of-type(3) {
+  font-size: 0.16rem;
+  position: absolute;
+  bottom: 0.23rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.mc .frist div:nth-of-type(3) div {
+  margin-top: 0.2rem;
+}
+.mc .frist div:nth-of-type(3) div a {
+  text-decoration: none;
+  color: red;
+}
+.mc .out {
+  display: none;
+  width: 3.37rem;
+  height: 3.37rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.23rem;
+  font-size: 0.22rem;
+  color: #ed760d;
+  text-align: center;
+}
+.mc .out .title {
+  font-weight: bolder;
+}
+.mc .out .title .yy {
+  font-size: 0.16rem;
+}
+.mc .out .img {
+  margin: 0.5rem 0 0.5rem;
+}
+.mc .out .img img {
+  width: 1rem;
+}
+.mc .out .redo input {
+  border: none;
+  background-color: orange;
+  color: white;
+  width: 1.3rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+}
+.mc .mf {
+  display: none;
+  width: 3.37rem;
+  height: 3.37rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.23rem;
+  font-size: 0.22rem;
+  color: #ed760d;
+  text-align: center;
+}
+.mc .mf .title {
+  font-weight: bolder;
+}
+.mc .mf .title .yy {
+  font-size: 0.16rem;
+}
+.mc .mf .img {
+  margin: 0.5rem 0 0.4rem;
+}
+.mc .mf .img img {
+  width: 2.5rem;
+}
+.mc .mf .redo {
+  display: flex;
+  justify-content: space-between;
+}
+.mc .mf .redo input {
+  border: none;
+  background-color: orange;
+  color: white;
+  width: 1.3rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+}
+@keyframes move {
+  100% {
+    background-position: 1rem;
+  }
+}
